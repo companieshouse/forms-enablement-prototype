@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Strike off a company from the register (DS01)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>You'll need the information shown below to complete this form:</p>
+
+      <ul class="list list-bullet">
+        <li>Your company number</li>
+        <li>Your company authentication code</li>
+        <li>Company director email addresses</li>
+        <li>A credit or debit card for payment</li>
+      </ul>
+
+      <p>This form normally takes 15 minutes to complete. Companies with a large number of directors may take longer.</p>
+
+      <p>
+        <a class="button button-start" href="sign-in" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>This form is only for striking off a Limited Company. Use form <a href="">LL DS01, striking off a Limited Liability Pertnership</a> to strike off a Limited Liability Pertnership.</p>
+
+      <p>You can also <a href="">strike off a company by post.</a></p>
+
+      <p>The online service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
