@@ -20,6 +20,11 @@ router.post('/examples/over-18', function (req, res) {
 });
 
 // Forms Service Start Page
+router.get('/forms/collection', function (req, res) {
+  res.render('forms/collection');
+});
+
+// Forms Service Start Page
 router.get('/forms/start', function (req, res) {
   res.render('forms/start');
 });
@@ -74,14 +79,44 @@ router.post('/forms/DS01/docusign', function (req, res) {
   res.render('forms/DS01/docusign');
 });
 
+// Docusign - Add Sig
+router.post('/forms/DS01/add-sig', function (req, res) {
+  res.render('forms/DS01/add-sig');
+});
+
+// Docusign - Sig Tool
+router.post('/forms/DS01/signature-tool', function (req, res) {
+  res.render('forms/DS01/signature-tool');
+});
+
+// Docusign - Sig Confirmation
+router.post('/forms/DS01/signature-confirmation', function (req, res) {
+  res.render('forms/DS01/signature-confirmation');
+});
+
 // Signature Request Review
 router.post('/forms/DS01/review', function (req, res) {
   res.render('forms/DS01/review');
 });
 
+// Docusign - Payment
+router.post('/forms/DS01/payment', function (req, res) {
+  res.render('forms/DS01/payment');
+});
+
+// Docusign - Confirmation
+router.post('/forms/DS01/confirmation', function (req, res) {
+  res.render('forms/DS01/confirmation');
+});
+
 // My Forms View
 router.get('/forms/my-forms', function (req, res) {
   res.render('forms/my-forms');
+});
+
+// Feedback
+router.get('/forms/feedback', function (req, res) {
+  res.render('forms/feedback');
 });
 
 // Signout
