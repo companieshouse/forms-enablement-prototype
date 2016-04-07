@@ -8,6 +8,10 @@
 
 <main id="content" role="main">
 
+  {% block phase_banner %}
+    {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
   <div class="breadcrumbs">
     <ol>
       <li><a href="http://www.gov.uk">Home</a></li>
@@ -25,10 +29,10 @@
   </p>
 
   <div class="docusign" style="text-align: center;">
-      <img src="/public/images/completed-form.jpg" alt="">
+      <img src="/public/images/completed-form.png" alt="">
   </div>
 
-  <a href="payment" class="button">Pay and submit</a>
+  <a href="payment" class="button">Confirm this request</a>
 
 </main>
 
