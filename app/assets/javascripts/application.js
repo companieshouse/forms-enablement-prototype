@@ -498,4 +498,13 @@ $(document).ready(function() {
   toggleContent.showHideRadioToggledContent();
   toggleContent.showHideCheckboxToggledContent();
 
+  // Signature button click
+  $(".add-sig-box").click(function() {
+    $(this).hide();
+    $(".sign-tag").fadeOut();
+    $(".sig").show();
+    $(".confirm-bar").animate({bottom: "0px"});
+    return false;
+  });
+
 });

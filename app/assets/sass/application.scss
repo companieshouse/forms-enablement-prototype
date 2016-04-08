@@ -39,3 +39,43 @@
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+//Docusign Styles
+.docusign {
+  &.unsigned {
+    background: url('/public/images/docusign-unsigned.png');
+    background-size: cover;
+    height: 1280px;
+    position: relative;
+    overflow: hidden;
+    .add-sig-box {
+      position: absolute;
+      left: 267px;
+      bottom: 285px;
+    }
+    .sign-tag {
+      position: absolute;
+      bottom:296px;
+      left:15px;
+    }
+    .sig {
+      display: none;
+      position: absolute;
+      bottom: 297px;
+      left: 269px;
+    }
+    .confirm-bar {
+      width: 960px;
+      height: 50px;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      background: url('/public/images/confirm-bar.png');
+      .conf-btn {
+        position: absolute;
+        top: 5px;
+        left: 667px;
+      }
+    }
+  }
+}
