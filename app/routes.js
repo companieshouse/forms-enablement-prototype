@@ -30,8 +30,8 @@ router.get('/forms/start', function (req, res) {
 });
 
 // Checklist
-router.get('/forms/checklist', function (req, res) {
-  res.render('forms/checklist');
+router.get('/forms/before-you-start', function (req, res) {
+  res.render('forms/before-you-start');
 });
 
 // Forms Service Home
