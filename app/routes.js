@@ -29,6 +29,11 @@ router.get('/forms/start', function (req, res) {
   res.render('forms/start');
 });
 
+// Checklist
+router.get('/forms/checklist', function (req, res) {
+  res.render('forms/checklist');
+});
+
 // Forms Service Home
 router.get('/forms/home', function (req, res) {
   res.render('forms/home');
