@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Blank page
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+    {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Strike off a company from the register (DS01)</li>
+    </ol>
+  </div>
+  <form class="form" method="POST" action="presenter-review" name="company">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Presenter details</h1>
+
+      <p class="lede">As a presenter, we'll need your details to notify the director that you've submitted this application to close the company.</p>
+
+      <div class="form-group">
+        <label class="form-label" for="first-name-2">First name</label>
+        <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="last-name-2">Last name</label>
+        <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="address">Phone number</label>
+        <p class="form-hint">This will be passed on to the director if they need to contact you.</p>
+        <input class="form-control" id="phone-number" name="phone-number" type="number">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="address">Email address</label>
+        <p class="form-hint">hinty hint</p>
+        <input class="form-control" id="email-address" name="email-address" type="text">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="address">Confirm email address</label>
+        <input class="form-control" id="confirm-email-address" name="confirm-email-address" type="text">
+      </div>
+
+
+      <div class="form-group">
+        <input class="button" type="submit" value="Continue">
+      </div>
+
+
+
+
+    <!--<div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>-->
+  </div>
+
+</main>
+
+{% endblock %}

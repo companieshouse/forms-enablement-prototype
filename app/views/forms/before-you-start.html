@@ -7,12 +7,65 @@
 {% block content %}
 
 <main id="content" role="main">
+    {% block phase_banner %}
+      {% include "includes/phase_banner_alpha.html" %}
+    {% endblock %}
 
-<h1 class="heading-xlarge">
-  Before you start
-</h1>
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href="http://www.gov.uk">Home</a></li>
+        <li><a href="">Companies House</a></li>
+        <li>Closing a limited company</li>
+      </ol>
+    </div>
 
-<a href="sign-in" class="button">Sign in</a>
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+        <h1 class="heading-xlarge">
+          Before you start
+        </h1>
+          <!--<p class="lede">Closing a company is a big deal. You need to be sure of your rights and responsibilities before starting this process.</p>-->
+            <h2 class="heading-medium">Getting ready to close your company</h2>
+            <p>An application for closing a company can only be made if the company is eligble. For example, a company can not apply to close if in the last 3 months it has traded or otherwise carried on business. </p>
+            <p>Read the guidance on <a href="https://www.gov.uk/government/publications/company-strike-off-dissolution-and-restoration/strike-off-dissolution-and-restoration-gp4#when-a-company-cannot-apply-to-be-struck-off-the-register">when a company cannot apply to close</a>.</p>
+          <h3 class="heading-medium">Who to tell about your company closing</h3>
+            <p>Directors applying to close their company must tell all interested parties that the application has been made, within 7 days of the application being sent. Interested parties include:</p>
+              <ul class="list list-bullet">
+                <li>members, usually shareholders</li>
+                <li>creditors</li>
+                <li>employees</li>
+              </ul>
+            <p>
+              For more information, read the guidance on <a href="https://www.gov.uk/government/publications/company-strike-off-dissolution-and-restoration/strike-off-dissolution-and-restoration-gp4#how-to-apply-for-strike-off-and-who-to-tell">who to inform<span class="visuallyhidden"> when striking off a company</span></a>.
+            </p>
+
+          <div class="notice" style="margin-bottom: 1.5em;">
+            <i class="icon icon-important">
+              <span class="visuallyhidden">Warning</span>
+            </i>
+            <strong class="bold-small">
+              It is an offence not to tell all interested parties
+            </strong>
+          </div>
+          <p>
+            <a href="sign-in" class="button">Continue</a>
+          </p>
+      </div>
+
+      <!--<div class="column-one-third">
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="https://www.gov.uk/government/publications/company-strike-off-dissolution-and-restoration/strike-off-dissolution-and-restoration-gp4">Full strike off, dissolution and restoration guidance (GP4)</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>-->
+
+  </div>
 
 </main>
 

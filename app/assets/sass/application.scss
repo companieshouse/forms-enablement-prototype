@@ -43,7 +43,7 @@
 //Docusign Styles
 .docusign {
   &.unsigned {
-    background: url('/public/images/docusign-unsigned.png');
+    background: url('/public/images/docusign-new-pdf.gif');
     background-size: cover;
     height: 1280px;
     position: relative;
@@ -51,17 +51,17 @@
     .add-sig-box {
       position: absolute;
       left: 267px;
-      bottom: 285px;
+      bottom: 355px;
     }
     .sign-tag {
       position: absolute;
-      bottom:296px;
+      bottom:370px;
       left:15px;
     }
     .sig {
       display: none;
       position: absolute;
-      bottom: 297px;
+      bottom: 370px;
       left: 269px;
     }
     .confirm-bar {
@@ -78,4 +78,24 @@
       }
     }
   }
+}
+
+/*Ugly CSS which James will SASSify! */
+.positive {
+  background-color:$turquoise;
+  color:$page-colour;
+  display: block;
+  padding:0.3em;
+}
+.negative {
+  background-color:$error-colour;
+  color:$page-colour;
+  display: block;
+  padding:0.3em;
+}
+th.dashboard-status {
+  width: 10em;
+}
+th.dashboard-dob {
+  width: 6em;
 }

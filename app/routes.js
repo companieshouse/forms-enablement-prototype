@@ -59,16 +59,16 @@ router.post('/forms/reset-email-sent', function (req, res) {
   res.render('forms/reset-email-sent');
 });
 
-// Before You Begin - DS01
-router.get('/DS01/before-you-begin', function (req, res) {
-  res.render('forms/DS01/before-you-begin');
-});
 
 // Company Information
 router.post('/forms/DS01/company-details', function (req, res) {
   res.render('forms/DS01/company-details');
 });
 
+// Authentication code
+router.post('/forms/DS01/auth-code', function (req, res) {
+  res.render('forms/DS01/auth-code');
+});
 // Company Confirmation
 router.post('/forms/DS01/confirm-company', function (req, res) {
   res.render('forms/DS01/confirm-company');
@@ -76,7 +76,26 @@ router.post('/forms/DS01/confirm-company', function (req, res) {
 
 // Director Email Addresses
 router.post('/forms/DS01/directors', function (req, res) {
-  res.render('forms/DS01/directors');
+  var presenter = req.body.presenter;
+  if (presenter == null) {
+    res.render('forms/DS01/directors');
+  } else {
+    if (presenter == "No") {
+      res.redirect('/forms/DS01/presenter-details');
+    } else {
+      res.redirect("/forms/DS01/docusign");
+    }
+  }
+});
+
+//Presenter info
+router.post('/forms/DS01/presenter-details', function (req, res) {
+  res.render('forms/DS01/presenter-details');
+});
+
+//Presenter info review page
+router.post('/forms/DS01/presenter-review', function (req, res) {
+  res.render('forms/DS01/presenter-review');
 });
 
 // Docusign
