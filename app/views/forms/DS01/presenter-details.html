@@ -24,36 +24,69 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">Presenter details</h1>
+      <h1 class="heading-xlarge">Your details</h1>
 
-      <p class="lede">As a presenter, we'll need your details to notify the director that you've submitted this application to close the company.</p>
+      <p class="lede">We'll use your details to help the director recognise your request.</p>
 
       <div class="form-group">
-        <label class="form-label" for="first-name-2">First name</label>
+        <label class="form-label" for="first-name-2">Your name</label>
         <input class="form-control" id="first-name-2" name="first-name-2" type="text">
       </div>
 
-      <div class="form-group">
+      <!--<div class="form-group">
         <label class="form-label" for="last-name-2">Last name</label>
         <input class="form-control" id="last-name-2" name="last-name-2" type="text">
-      </div>
+      </div>-->
 
       <div class="form-group">
-        <label class="form-label" for="address">Phone number</label>
-        <p class="form-hint">This will be passed on to the director if they need to contact you.</p>
+        <label class="form-label" for="address">Phone number (optional)</label>
         <input class="form-control" id="phone-number" name="phone-number" type="number">
       </div>
 
-      <div class="form-group">
+      <!--<div class="form-group">
         <label class="form-label" for="address">Email address</label>
-        <p class="form-hint">hinty hint</p>
         <input class="form-control" id="email-address" name="email-address" type="text">
       </div>
 
       <div class="form-group">
         <label class="form-label" for="address">Confirm email address</label>
         <input class="form-control" id="confirm-email-address" name="confirm-email-address" type="text">
-      </div>
+      </div>-->
+
+  <h1 class="heading-medium">Would you like to use the email address on your account?</h1>
+
+   <form>
+     <fieldset class="inline">
+
+       <legend class="visuallyhidden">Would you like to use the email address on your account?</legend>
+
+       <div class="form-group">
+
+         <label class="block-label" for="radio-indent-1">
+           <input id="radio-indent-1" type="radio" name="radio-indent-group" value="Yes">
+           Yes
+         </label>
+
+         <label class="block-label" data-target="example-ni-no" for="radio-indent-2">
+           <input id="radio-indent-2" type="radio" name="radio-indent-group" value="No">
+           No
+         </label>
+
+         <div class="panel panel-border-narrow js-hidden" id="example-ni-no">
+           <div class="form-group">
+             <label class="form-label" for="alt-email">Alternative email address</label>
+             <input class="form-control" name="alt-email" type="text" id="alt-email">
+           </div>
+           <div class="form-group">
+             <label class="form-label" for="conf-email">Confirm email address</label>
+             <input class="form-control" name="conf-email" type="text" id="conf-email">
+           </div>
+         </div>
+
+       </div>
+
+     </fieldset>
+   </form>
 
 
       <div class="form-group">
