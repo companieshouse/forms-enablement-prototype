@@ -5,13 +5,62 @@
 {% endblock %}
 
 {% block content %}
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
 
 <main id="content" role="main">
 
   {% block phase_banner %}
     {% include "includes/phase_banner_alpha.html" %}
   {% endblock %}
-  
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Forms service</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">My submissions</h1>
+      <p class="lede">Here you can view all of your submissions for different companies.</p>
+      <h3 class="heading-medium">Templeton Metal Works Limited</h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th class="numeric">Date sent</th>
+              <th class="status">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="v">Closing a company(DS01)</a></td>
+              <td class="numeric">29 May 2016</td>
+              <td><span class="negative">Not finished</span></td>
+            </tr>
+            <tr>
+              <td><a href="v">Adding a director(AD01)</a></td>
+              <td class="numeric">1/07/15</td>
+              <td><span class="positive">Complete</span></td>
+            </tr>
+            <!--<tr>
+             <td>9 to 15 December 2013</td>
+              <td class="numeric">2,388</td>
+              <td class="numeric">1,683</td>
+            </tr>-->
+          </tbody>
+        </table>
+
+    </div>
+
+    <div class="column-third">
+    </div>
+  </div>
+
 </main>
 
 {% endblock %}

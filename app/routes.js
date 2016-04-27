@@ -134,7 +134,7 @@ router.post('/forms/DS01/confirmation', function (req, res) {
 });
 
 // My Forms View
-router.get('/forms/my-forms', function (req, res) {
+router.post('/forms/my-forms', function (req, res) {
   res.render('forms/my-forms');
 });
 
