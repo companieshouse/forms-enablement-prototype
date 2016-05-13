@@ -4,6 +4,7 @@
   Blank page
 {% endblock %}
 
+
 {% block content %}
 
 <main id="content" role="main">
@@ -20,22 +21,56 @@
     </ol>
   </div>
 
-  <h1 class="heading-xlarge">Review strike off request</h1>
-  <p class="lede">
-    Your signed request is shown below and should be checked by you to ensure all information is correct. <span class="bold-medium">Your request has not been submitted</span> until you have reviewed this document and the associated fee has been paid on the following page.
-  </p>
+  <form class="form" method="POST" action="payment" name="company">
+    <div class="grid-row">
+      <div class="column-two-thirds">
 
-  <div class="docusign" style="text-align: left;">
-      <img src="/public/images/completed-form-newpdf.gif" alt="">
-  </div>
+        <h1 class="heading-xlarge">Review your application</h1>
+        <p class="lede">Please review the information you've entered for the application to close this company.</p>
 
-  <div class="button-spacing">
-    <a href="payment" class="button">Continue</a>
-  </div>
-  <p>
-    <a href="company-details">Start over</a>
-  </p>
+        <div class="form-group">
+          <table class="check-your-answers">
+            <thead>
+              <tr>
+                <th colspan="3">
+                  <h2 class="heading-medium">Application details</h2>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Company details</td>
+                <td>Templeton Metal Work Limited<br>
+                    05647510<br>
+                    22 Everdene Lane<br>
+                    West Morton<br>
+                    Northamptonshire<br>
+                    NT54 3ET</td>
+                <td class="change-answer">
+                  <a href="#">
+                    Change <span class="visuallyhidden">Company details</span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Director</td>
+                <td>David Arthur Templeton</td>
+                <td class="change-answer">
+                  <a href="#">
+                    Change <span class="visuallyhidden">Directors name</span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group">
+          <a href="payment" class="button">Continue</a>
+        </div>
 
+      </div>
+    </div>
+  </form>
 </main>
 
 {% endblock %}
