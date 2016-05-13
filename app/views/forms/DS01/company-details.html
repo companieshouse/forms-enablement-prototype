@@ -20,42 +20,37 @@
     </ol>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h1 class="heading-xlarge">Which company are you striking off?</h1>
-      <form class="form" method="POST" action="auth-code" name="company">
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-xlarge">Tell us which company you want to close</h1>
+      <form class="form" method="POST" action="/forms/DS01/auth-code" name="company">
 
         <div class="form-group">
-          <label class="form-label" for="company-number">
-            Company Number
-            <span class="form-hint">This is the number you put at the bottom of your company stationery.</span>
+          <label class="form-label" for="ni-number">
+            What is the company number?
+            <span class="form-hint">This is the 8 digit number at the bottom of your company certificate.</span>
           </label>
           <input class="form-control" id="company-number" name="company-number" type="number" value="">
         </div>
+
+      <div class="form-group">
+        <details><summary><span class="summary">How do I know what my company number is?</span></summary>
+          <div class="panel panel-border-narrow">
+            <p>
+              If your company was registered in Scotland, for example, your company number would start with SC.
+            </p>
+            <p>
+              You can <a href="http://beta.companieshouse.gov.uk">search for your company on the public register</a> to find your company number.
+            </p>
+          </div>
+        </details>
+      </div>
 
         <div class="form-group">
           <input class="button" type="submit" value="Confirm my company details">
         </div>
 
-        <p>
-          <a href="http://beta.companieshouse.gov.uk">Find your company in the public register</a>
-        </p>
-
       </form>
-    </div>
-    <div class="column-third">
-
-      <!--<aside class="govuk-related-items" role="complementary">
-        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="font-xsmall">
-            <li><a href="#">Related link</a></li>
-            <li><a href="#">Related link</a></li>
-            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
-          </ul>
-        </nav>
-      </aside>-->
-
     </div>
   </div>
 

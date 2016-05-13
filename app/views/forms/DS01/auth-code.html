@@ -22,46 +22,23 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-
-      <h1 class="heading-xlarge">Authentication code</h1>
-      <form class="form" method="POST" action="confirm-company" name="company-auth-code">
-
-
-      <div class="form-group">
-          <label class="form-label" for="company-auth-code">Company authentication code
-            <span class="form-hint">This is the code you use to file your accounts online.
-              A company authentication code allows you to act on behalf of a company.</span>
-          </label>
-          <input class="form-control" id="company-auth-code" name="company-auth-code" type="text" value="">
-            <p>
-              <details>
-                <summary><span class="summary">How do I get an authentication code?</span></summary>
-                <div class="panel panel-border-narrow">
-                  <p>You can use the following link to <a href="">request a company authentication code</a></p>
-                </div>
-              </details>
+      <h1 class="heading-xlarge">Company authentication</h1>
+        <form class="form" method="POST" action="confirm-company" name="company-auth-code">
+            <p>To file company information you will need an authentication code.</p>
+            <p>Authenticating for
+              <br>
+              <span class="heading-medium" id="company-details">Templeton Metal Works Ltd (05647510)</span>
             </p>
-      </div>
-
-      <div class="form-group">
-        <input class="button" type="submit" value="Continue">
-      </div>
-
-    </form>
-  </div>
-
-    <div class="column-third">
-<!--<aside class="govuk-related-items" role="complementary">
-        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
-          <nav role="navigation" aria-labelledby="subsection-title">
-            <ul class="font-xsmall">
-              <li><a href="#">Related link</a></li>
-              <li><a href="#">Related link</a></li>
-              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
-            </ul>
-         </nav>
-      </aside>-->
-
+            <div class="form-group">
+                <label class="form-label" for="company-auth-code">Authenticaton code
+                </label>
+                <input class="form-control" id="company-auth-code" name="company-auth-code" type="text" value="">
+            </div>
+            <div class="form-group">
+              <input class="button" type="submit" value="Continue">
+            </div>
+            <a id="auth_code_request" href="">Request an authentication code</a>
+      </form>
     </div>
   </div>
 </main>
