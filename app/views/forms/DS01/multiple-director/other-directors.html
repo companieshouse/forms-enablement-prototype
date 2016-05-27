@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Strike off a company from the register (DS01)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Choose your directors</h1>
+
+      <p class="lede">
+        To close a company, you first need the majority of directors to approve the application.<br>
+      </p>
+
+      <h2 class="heading-medium">Please select at least {{ directorCount }} of the directors below:</h2>
+
+
+
+
+
+
+
+      <form class="form" method="POST" action="other-directors" name="directors">
+        <div class="form-group">
+          <fieldset class="">
+
+            <legend class="visuallyhidden">What are the other directors details?</legend>
+
+            {% for director in directorArray %}
+
+              <label class="block-label" data-target="director-{{loop.index}}" for="checkbox-{{loop.index}}">
+                <input id="checkbox-{{loop.index}}" type="checkbox" name="checkbox-group" value="">
+                {{ director }}
+              </label>
+              <div class="panel panel-border-narrow js-hidden" id="director-{{loop.index}}">
+                <p>
+                  To choose this director we will need to know their email address to request their approval.
+                </p>
+                <div class="form-group">
+                  <label class="form-label" for="director-{{loop.index}}-email">Email address</label>
+                  <input class="form-control" name="director-{{loop.index}}-email" type="text" id="director-{{loop.index}}-email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="director-{{loop.index}}--confirm-email">Confirm email address</label>
+                  <input class="form-control" name="director-{{loop.index}}-confirm-email" type="text" id="director-{{loop.index}}-email">
+                </div>
+              </div>
+
+            {% endfor %}
+
+          </fieldset>
+        </div>
+        <input class="button" type="submit" value="Continue">
+      </div>
+      <input name="routeCheck" type="hidden" value="routeCheck" />
+    </form>
+  </div>
+  <div class="column-third">
+
+    <!--<aside class="govuk-related-items" role="complementary">
+    <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+    <nav role="navigation" aria-labelledby="subsection-title">
+    <ul class="font-xsmall">
+    <li><a href="#">Related link</a></li>
+    <li><a href="#">Related link</a></li>
+    <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+  </ul>
+</nav>
+</aside>-->
+
+</div>
+</div>
+
+</main>
+
+{% endblock %}

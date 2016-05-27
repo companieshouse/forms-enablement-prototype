@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Blank page
+Blank page
 {% endblock %}
 
 {% block content %}
@@ -9,7 +9,7 @@
 <main id="content" role="main">
 
   {% block phase_banner %}
-    {% include "includes/phase_banner_alpha.html" %}
+  {% include "includes/phase_banner_alpha.html" %}
   {% endblock %}
 
   <div class="breadcrumbs">
@@ -21,12 +21,16 @@
   </div>
 
   <h1 class="heading-xlarge">
-    Make payment
+    Provide your signature
   </h1>
 
-  <div class="docusign">
-    <a href="confirmation">
-      <img src="/public/images/payment.png" alt="" style="">
+  <p class="lede">
+    As the director of Templeton Metal Work Limited, your signature is required to strike the company off the register.
+  </p>
+
+  <div class="docusign signed">
+    <a href="email-sent">
+      <img src="/public/images/docusign-sig-added.png" alt="" style="width: 100%;">
     </a>
   </div>
 

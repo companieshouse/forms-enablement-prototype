@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Blank page
+Blank page
 {% endblock %}
 
 {% block content %}
@@ -9,7 +9,7 @@
 <main id="content" role="main">
 
   {% block phase_banner %}
-    {% include "includes/phase_banner_alpha.html" %}
+  {% include "includes/phase_banner_alpha.html" %}
   {% endblock %}
 
   <div class="breadcrumbs">
@@ -28,11 +28,21 @@
     As the director of Templeton Metal Work Limited, your signature is required to strike the company off the register.
   </p>
 
-  <div class="docusign signed">
-    <a href="review">
-      <img src="/public/images/docusign-sig-added.png" alt="" style="width: 100%;">
+  <div class="docusign unsigned">
+    <!--<a href="docusign-signature" class="add-sig-box button">
+    Add signature
+  </a>-->
+  <a href="docusign-signature" class="add-sig-box">
+    <img src="/public/images/add-sig.png" alt="add signature" class="">
+  </a>
+  <img src="/public/images/sign-tag.png" alt="" class="sign-tag">
+  <img src="/public/images/sig.png" alt="" class="sig">
+  <div class="confirm-bar">
+    <a href="email-sent" class="conf-btn">
+      <img src="/public/images/continue-button.png" alt="" class="">
     </a>
   </div>
+</div>
 
 </main>
 
