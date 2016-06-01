@@ -91,7 +91,7 @@ module.exports = function(router) {
 
     } else {
       if (sess.director) {
-        res.redirect("/forms/DS01/multiple-director/docusign");
+        res.redirect("/forms/DS01/multiple-director/approve-application");
       } else {
         res.redirect("/forms/DS01/multiple-director/email-sent");
       }

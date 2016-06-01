@@ -70,5 +70,11 @@ module.exports = function(router) {
     res.render('forms/DS01/sole-director/confirmation');
   });
 
+  // checkbox page
+  router.post('/forms/DS01/sole-director/approve-application', function (req, res) {
+    res.render('forms/DS01/sole-director/approve-application');
+  });
+
+
 
 };
