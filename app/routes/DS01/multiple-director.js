@@ -91,7 +91,7 @@ module.exports = function(router) {
 
     } else {
       if (sess.director) {
-        res.redirect("/forms/DS01/multiple-director/approve-application");
+        res.redirect("/forms/DS01/multiple-director/directors-emails");
       } else {
         res.redirect("/forms/DS01/multiple-director/email-sent");
       }
@@ -110,29 +110,60 @@ module.exports = function(router) {
     var directorCount = "";
 
     if (sess.director) {
-      var position = directorArray.indexOf(sess.director);
-      directorArray.splice(position, 1);
-      directorCount = 2;
+    var position = directorArray.indexOf(sess.director);
+    directorArray.splice(position, 1);
+    directorCount = 2;
+  } else {
+  directorCount = 3;
+}
+
+res.render('forms/DS01/multiple-director/other-directors', {'directorCount': directorCount, 'directorArray': directorArray});
+*/
+});
+
+// Review your application
+router.post('/forms/DS01/multiple-director/review', function (req, res) {
+  res.render('forms/DS01/multiple-director/review');
+});
+
+//email sent
+router.post('/forms/DS01/multiple-director/email-sent.html', function (req, res) {
+  res.render('/forms/DS01/multiple-director/email-sent.html');
+});
+
+// No I'm, not a director, prersenter details
+router.post('/forms/DS01/multiple-director/presenter-details', function (req, res) {
+  res.render('forms/DS01/multiple-director/presenter-details');
+});
+
+router.post('/forms/DS01/multiple-director/directors-emails', function (req, res) {
+  res.render('forms/DS01/multiple-director/directors-emails');
+});
+
+router.post('/forms/DS01/multiple-director/sign-on-behalf', function (req, res) {
+    var information = req.body.signOnBehalf;
+    if (information == null) {
+      res.render('forms/DS01/multiple-director/sign-on-behalf');
     } else {
-      directorCount = 3;
+      if (information == "No") {
+        res.redirect('/forms/DS01/multiple-director/docusign');
+      } else {
+        res.redirect("/forms/DS01/multiple-director/direc-details-sign-on-behalf");
+      }
     }
-
-    res.render('forms/DS01/multiple-director/other-directors', {'directorCount': directorCount, 'directorArray': directorArray});
-    */
   });
 
-  // Review your application
-  router.post('/forms/DS01/multiple-director/review', function (req, res) {
-    res.render('forms/DS01/multiple-director/review');
+  router.post('/forms/DS01/multiple-director/direc-details-sign-on-behalf', function (req, res) {
+    res.render('forms/DS01/multiple-director/direc-details-sign-on-behalf');
   });
 
-  //email sent
-  router.post('/forms/DS01/multiple-director/email-sent.html', function (req, res) {
-    res.render('/forms/DS01/multiple-director/email-sent.html');
+  router.post('/forms/DS01/multiple-director/poa-deceased-corp', function (req, res) {
+    res.render('forms/DS01/multiple-director/poa-deceased-corp');
   });
 
-  // No I'm, not a director, prersenter details
-  router.post('/forms/DS01/multiple-director/presenter-details', function (req, res) {
-    res.render('forms/DS01/multiple-director/presenter-details');
+  router.post('/forms/DS01/multiple-director/approve-application', function (req, res) {
+    res.render('forms/DS01/multiple-director/approve-application');
   });
+
+
 };

@@ -26,16 +26,10 @@ Blank page
       <h1 class="heading-xlarge">Choose your directors</h1>
 
       <p class="lede">
-        To close a company, you first need the majority of directors to approve the application.<br>
+        To close a company, you first need the majority of directors to approve the application.
       </p>
 
       <h2 class="heading-medium">Please select at least {{ directorCount }} of the directors below:</h2>
-
-
-
-
-
-
 
       <form class="form" method="POST" action="other-directors" name="directors">
         <div class="form-group">
@@ -49,7 +43,7 @@ Blank page
                 <input id="checkbox-{{loop.index}}" type="checkbox" name="checkbox-group" value="">
                 {{ director }}
               </label>
-              <div class="panel panel-border-narrow js-hidden" id="director-{{loop.index}}">
+              <!--<div class="panel panel-border-narrow js-hidden" id="director-{{loop.index}}">
                 <p>
                   To choose this director we will need to know their email address to request their approval.
                 </p>
@@ -61,7 +55,7 @@ Blank page
                   <label class="form-label" for="director-{{loop.index}}--confirm-email">Confirm email address</label>
                   <input class="form-control" name="director-{{loop.index}}-confirm-email" type="text" id="director-{{loop.index}}-email">
                 </div>
-              </div>
+              </div>-->
 
             {% endfor %}
 
