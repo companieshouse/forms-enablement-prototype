@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Start page example
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House</a></li>
+      <li>SH19</li>
+    </ol>
+  </div>
+
+
+  <h1 class="heading-xlarge">
+    Supporting documents
+  </h1>
+
+  <p class="lede">
+    To finish this application you'll need to attach some documents.
+  </p>
+
+  <h2 class="heading-large">
+    Files needed
+  </h2>
+
+  <div class="form-group">
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">File name</th>
+          <th scope="col">Status</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Statement of capital when reducing capital in a company (SH19)</td>
+          <td>Not yet uploaded</td>
+          <td><a href="" class="link bold-small">Add document</a></td>
+        </tr>
+        <tr>
+          <td>Terminate an appointment of a director (TM01)</td>
+          <td>direc_document.pdf (205 KB)</td>
+          <td><a href="" class="link bold-small">Remove</a></td>
+        </tr>
+        <tr>
+          <td>Appoint a director (AP01)</td>
+          <td>Not yet uploaded</td>
+          <td><a href="" class="link bold-small">Add document</a></td>
+        </tr>
+        <tr>
+          <td>Change a registered office address (AD01)</td>
+          <td>reg_office_doc.pdf (325 KB)</td>
+          <td><a href="" class="link bold-small">Remove</a></td>
+        </tr>
+        <tr>
+          <td>Confirm satisfaction of the resolution of change of name (NM03)</td>
+          <td>direc_document.pdf (205 KB)</td>
+          <td><a href="" class="link bold-small">Remove</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <p>
+    <a class="button" href="" role="button" disabled="disabled">Submit documents</a>
+  </p>
+
+
+</main>
+
+{% endblock %}
