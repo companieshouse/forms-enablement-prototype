@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Reducing your share capital (SH19)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Company authentication</h1>
+      <form class="form" method="POST" action="confirm-company" name="company-auth-code">
+        <p>To file company information you will need an authentication code.</p>
+        <p>Authenticating for
+          <br>
+          <span class="heading-medium" id="company-details">Templeton Metal Works Ltd (05647510)</span>
+        </p>
+        <div class="form-group">
+          <label class="form-label" for="company-auth-code">Authenticaton code
+          </label>
+          <input class="form-control" id="company-auth-code" name="company-auth-code" type="text" value="">
+        </div>
+      </form>
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+          <a class="button" href="share-class-details" role="button">Continue</a>
+        </div>
+
+        <a id="auth_code_request" href="">Request an authentication code</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

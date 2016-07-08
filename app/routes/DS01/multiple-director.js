@@ -1,5 +1,10 @@
 module.exports = function(router) {
 
+
+  router.post('/forms/DS01/multiple-director/confirm-company', function (req, res) {
+    res.render('forms/DS01/multiple-director/confirm-company');
+  });
+
   // List of company directors,are you one of these
   router.post('/forms/DS01/multiple-director/directors-list', function (req, res) {
     var information = req.body.information;
@@ -25,7 +30,7 @@ module.exports = function(router) {
         sess.presenterOnly = "yes";
         res.redirect("/forms/DS01/multiple-director/other-directors");
       } else {
-        res.redirect("/forms/DS01/multiple-director/which-direc-are-you");
+        res.redirect("/forms/DS01/multiple-director/other-directors");
       }
     }
   });
@@ -93,7 +98,7 @@ module.exports = function(router) {
       if (sess.director) {
         res.redirect("/forms/DS01/multiple-director/directors-emails");
       } else {
-        res.redirect("/forms/DS01/multiple-director/email-sent");
+        res.redirect("/forms/DS01/multiple-director/sign-on-behalf");
       }
     }
 

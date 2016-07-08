@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Start page example
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House</a></li>
+      <li>Reducing your share capital (SH19)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Reducing your share capital (SH19)
+      </h1>
+
+      <p class="lede">
+        This service is used to reduce your share capital for a private or public limited company.
+      </p>
+
+      <p>It costs £10 to reduce your share capital, and you will need:</p>
+
+      <ul class="list list-bullet">
+        <li>the company number</li>
+        <li>the company authentication code</li>
+        <li>a credit or debit card</li>
+      </ul>
+
+      <p>It normally takes 10 minutes to complete this process.</p>
+
+      <p>
+        <a class="button button-start" href="plc-or-limited" role="button">Start now</a>
+      </p>
+
+      <div class="form-class table-spacing">
+        <h2 class="heading-medium">Before you begin</h2>
+        <p>If you wish to use the same day service, it costs £50 and you will need to provide all the supporting documents during this application.</p>
+      </div>
+
+
+      <p>This service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+
+    </div>
+    <div class="column-third">
+
+      <!--<aside class="govuk-related-items" role="complementary">
+      <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+      <ul class="font-xsmall">
+      <li><a href="#">Related link</a></li>
+      <li><a href="#">Related link</a></li>
+      <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+    </ul>
+  </nav>
+</aside>-->
+
+</div>
+</div>
+
+</main>
+
+{% endblock %}

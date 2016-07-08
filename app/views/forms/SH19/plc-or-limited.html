@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Reducing your share capital (SH19)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form class="form" method="POST" action="company-details" name="">
+        <h1 class="heading-xlarge">Is your company a private or public limited company?</h1>
+
+        <div class="form-group">
+          <fieldset class="inline">
+            <legend class="visuallyhidden">Is your company a private or public limited company?</legend>
+            <label class="block-label" data-target="example-private" for="radio-inline-1">
+              <input id="radio-inline-1" type="radio" name="presenter" value="private">
+              Private limited company
+            </label>
+            <label class="block-label" data-target="example-public" for="radio-inline-2">
+              <input id="radio-inline-2" type="radio" name="presenter" value="public">
+              Public limited company
+            </label>
+          </fieldset>
+
+          <div class="panel panel-border-narrow js-hidden" id="example-private">
+            <p>
+              If you're filing for a private limited company, you'll need the following documents:
+            </p>
+            <ul class="list list-bullet">
+              <li>solvency statement</li>
+              <li>special resolution authorising the capital reduction</li>
+              <li>director's statement</li>
+            </ul>
+          </div>
+
+
+          <div class="panel panel-border-narrow js-hidden" id="example-public">
+            <p>
+              If you're filing for a public limited company, you'll need the following documents:
+            </p>
+            <ul class="list list-bullet">
+              <li>order of court</li>
+              <li>special resolution authorising capital reduction</li>
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="form-group">
+        <!--<input class="button" type="submit" value="Continue">-->
+        <a class="button" href="company-details" role="button">Continue</a>
+      </div>
+    </form>
+
+  </div>
+</main>
+
+{% endblock %}

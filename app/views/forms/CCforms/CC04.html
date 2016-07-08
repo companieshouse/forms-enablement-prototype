@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Statement of company's objects (CC04)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">How are you changing the company's objects?</h1>
+
+      <!--<p class="lede">You've chosen to authorise this application on behalf of David Arthur Templeton.</p>-->
+
+      <form class="form" method="POST" action="" name="">
+        <h3 class="heading-medium">Please tell us how you will be changing the company objects:</h3>
+
+        <div class="form-group">
+          <fieldset>
+
+            <label class="block-label" for="i-am-director">
+              <input id="i-am-director" name="situations" type="radio" value="i-am-director">
+              I'm adding to the objects
+            </label>
+            <label class="block-label" for="deceased-director" data-target="deceased-director-name">
+              <input id="deceased-director" name="situations" type="radio" value="deceased-director">
+              I'm removing some of the objects
+            </label>
+            <label class="block-label" for="power-of-attorney" data-target="power-of-attorney-details">
+              <input id="power-of-attorney" name="situations" type="radio" value="power-of-attorney">
+              I'm altering some of the objects
+            </label>
+
+            </fieldset>
+            </div>
+          </form>
+        </div>
+      </div>
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+    <div class="column-third">
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
