@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Reducing your share capital (SH19)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Share capital</h1>
+
+
+      <h2 class="heading-large">Ordinary</h2>
+      <p>Share has full rights including voting, dividends and distributions.</p>
+      <div class="form-group">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Currency</th>
+              <th scope="col" class="numeric">Total number of shares</th>
+              <th scope="col" class="numeric">Aggregate nominal value</th>
+              <th scope="col" class="numeric">Total amount unpaid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pound sterling</td>
+              <td class="numeric">5</td>
+              <td class="numeric">£5</td>
+              <td class="numeric">0</td>
+            </tr>
+            <tr>
+            </tbody>
+          </table>
+        </div>
+
+        <a href="share-class-details" class="link">Add more Ordinary shares</a>
+
+
+        <h3 class="heading-medium">Have you finished adding all of your shares?</h3>
+        <div class="form-group">
+          <form>
+            <fieldset class="inline">
+
+              <label class="block-label" for="radio-inline-1">
+                <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                Yes, confirm my share capital
+              </label>
+              <label class="block-label" for="radio-inline-3">
+                <input id="radio-inline-3" type="radio" name="radio-inline-group" value="No">
+                No, I need to add a different class of share
+              </label>
+
+            </fieldset>
+          </form>
+        </div>
+        <a class="button" href="upload_attachments" role="button">continue</a>
+
+      </div>
+    </div>
+
+  </main>
+
+  {% endblock %}

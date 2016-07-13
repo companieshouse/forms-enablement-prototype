@@ -22,47 +22,45 @@ Blank page
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">Reducing shares in your company</h1>
+      <h1 class="heading-xlarge">Share capital</h1>
 
-      <h1 class="heading-medium">What class of share are you reducing?</h1>
-      <form class="form" method="POST" action="" name="">
-        <div class="form-group">
-          <fieldset>
+      <h3 class="heading-medium">What class of share are you reducing?</h3>
+        <form class="form" method="POST" action="" name="">
+          <div class="form-group">
+            <fieldset>
 
-            <label class="block-label" for="radio-1">
-              <input id="radio-1" type="radio" name="radio-group" value="">
-              Ordinary
-            </label>
-            <label class="block-label" for="radio-2">
-              <input id="radio-2" type="radio" name="radio-group" value="">
-              Ordinary A
-            </label>
-            <label class="block-label" for="radio-3">
-              <input id="radio-3" type="radio" name="radio-group" value="">
-              Ordinary B
-            </label>
-            <label class="block-label" for="radio-4">
-              <input id="radio-4" type="radio" name="radio-group" value="">
-              Ordinary C
-            </label>
-            <label class="block-label" for="radio-5">
-              <input id="radio-5" type="radio" name="radio-group" value="">
-              Preferred
-            </label>
-            <label class="block-label" for="radio-6" data-target="other-name">
-              <input id="radio-6" type="radio" name="radio-group" value="">
-              Other
-            </label>
-          </fieldset>
+              <label class="block-label" for="radio-1">
+                <input id="radio-1" type="radio" name="radio-group" value="">
+                Ordinary
+              </label>
+              <!--<label class="block-label" for="radio-2">
+                <input id="radio-2" type="radio" name="radio-group" value="">
+                Ordinary A
+              </label>
+              <label class="block-label" for="radio-3">
+                <input id="radio-3" type="radio" name="radio-group" value="">
+                Ordinary B
+              </label>
+              <label class="block-label" for="radio-4">
+                <input id="radio-4" type="radio" name="radio-group" value="">
+                Ordinary C
+              </label>-->
+              <label class="block-label" for="radio-5">
+                <input id="radio-5" type="radio" name="radio-group" value="">
+                Preferred
+              </label>
+              <label class="block-label" for="radio-6" data-target="other-name">
+                <input id="radio-6" type="radio" name="radio-group" value="">
+                Other
+              </label>
+            </fieldset>
 
-          <div class="panel panel-border-narrow js-hidden" id="other-name">
-            <p>
-              What is the name of the share class?
-            </p>
-            <input class="form-control" id="share-class-name" type="text">
+            <div class="panel panel-border-narrow js-hidden" id="other-name">
+              <label class="form-label" for="other-rights-1"></label>
+              <input class="form-control" id="share-class-name" type="text">
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
 
       <h1 class="heading-medium">What are the rights attached to these shares?</h1>
       <form class="form" method="POST" action="" name="">
@@ -80,7 +78,7 @@ Blank page
           </fieldset>
 
           <div class="panel panel-border-narrow js-hidden" id="other-rights">
-            <label class="heading-small" for="other-rights-1">What rights does this share class hold?</label>
+            <label class="form-label" for="other-rights-1"></label>
             <textarea class="" id="other-rights-1" rows="10" type="text"></textarea>
           </div>
         </div>
@@ -88,7 +86,7 @@ Blank page
 
         <div class="form-group">
           <!--<input class="button" type="submit" value="Continue">-->
-          <a class="button" href="table-page" role="button">Continue</a>
+          <a class="button" href="add-share-amount" role="button">Continue</a>
         </div>
 
 
