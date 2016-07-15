@@ -34,13 +34,13 @@ Blank page
                 <input id="radio-7" type="radio" name="radio-group" value="">
                 Pound sterling
               </label>
-              <label class="block-label" for="radio-8">
-                <input id="radio-8" type="radio" name="radio-group" value="">
-                USD
-              </label>
               <label class="block-label" for="radio-9">
                 <input id="radio-9" type="radio" name="radio-group" value="">
                 Euro
+              </label>
+              <label class="block-label" for="radio-8">
+                <input id="radio-8" type="radio" name="radio-group" value="">
+                USD
               </label>
               <label class="block-label" for="radio-10" data-target="other-currency">
                 <input id="radio-10" type="radio" name="radio-group" value="">
@@ -55,39 +55,59 @@ Blank page
         </form>
 
         <div class="form-group">
-          <label class="label-class" for="full-name-f1">What's the total amount of Ordinary shares in this currency?
+          <label class="form-label-bold" for="full-name-f1">What's the total amount of Ordinary shares in this currency?
           </label>
           <input class="form-control" id="full-name-f1" type="text">
         </div>
 
         <div class="form-group">
-          <label class="label-class" for="full-name-f2">What's the total aggregate nominal value of Ordinary shares in this currency?</label>
-            <p class="form-hint">This is the total number of shares multiplied by the nominal value. The nominal value is the value per each share.</p>
+          <label class="form-label-bold" for="">What's the total nominal value of Ordinary shares in this currency?</label>
+            <p class="form-hint">This is the total number of shares multiplied by the aggregate nominal value. The nominal value is the value per each share.</p>
           <input class="form-control" id="full-name-f2" type="text">
         </div>
 
 
         <div class="form-group">
-          <h3 class="heading-medium">Are all the shares fully paid?</h3>
-          <form>
-            <fieldset class="inline">
+           <h3 class="heading-medium">Have the shares been paid for?</h3>
+           <fieldset>
+           <legend class="visuallyhidden">Have the shares been paid for?</legend>
+           <label class="block-label" for="share-class-currency-pound" data-target="shares-paid-yes">
+             <input id="share-class-currency-pound" type="radio" name="radio-inline-group" value="British Pound">
+             Yes
+           </label>
+           <div class="panel panel-border-narrow js-hidden" id="shares-paid-yes">
+             <div class="form-group">
+               <label class="form-label" for="share-class-p">Amount paid for the shares</label>
+               <input class="form-control" id="share-class-p" type="text">
+             </div>
+           </div>
+           <label class="block-label" for="share-some-paid" data-target="shares-paid-some">
+             <input id="share-some-paid" type="radio" name="radio-inline-group" value="British Pound">
+             Some of them
+           </label>
+           <div class="panel panel-border-narrow js-hidden" id="shares-paid-some">
+             <div class="form-group">
+               <label class="form-label" for="share-class-p">Amount already paid for the shares</label>
+               <input class="form-control" id="share-class-p" type="text">
+             </div>
+             <div class="form-group">
+               <label class="form-label" for="share-class-p">How much is outstanding (if any)?</label>
+               <input class="form-control" id="share-class-p" type="text">
+             </div>
+           </div>
+           <label class="block-label" for="share-class-currency-other" data-target="shares-paid-no">
+             <input id="share-class-currency-other" type="radio" name="radio-inline-group" value="other currencies">
+             No
+           </label>
+           <div class="panel panel-border-narrow js-hidden" id="shares-paid-no">
+             <div class="form-group">
+               <label class="form-label" for="share-class-p">Outstanding amount owed for the shares</label>
+               <input class="form-control" id="share-class-p" type="text">
+             </div>
+           </div>
+         </fieldset>
+      </div>
 
-              <label class="block-label" for="radio-inline-1">
-                <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                Yes
-              </label>
-              <label class="block-label" for="radio-inline-3" data-target="not-paid">
-                <input id="radio-inline-3" type="radio" name="radio-inline-group" value="No">
-                No
-              </label>
-            </fieldset>
-
-            <div class="panel panel-border-narrow js-hidden" id="not-paid">
-              <label class="form-label" for="not-paid-shares">What's the total aggregate amount unpaid?</label>
-              <input class="form-control" id="share-class-name" type="text">
-            </div>
-          </form>
-        </div>
         <a class="button" href="table-page" role="button">continue</a>
 
 

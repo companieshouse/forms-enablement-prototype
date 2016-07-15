@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Cancelling some of your company shares (SH06)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Cancelling company shares</h1>
+
+      <div class="form-group">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Class of shares</th>
+              <th scope="col" class="numeric">Number of shares cancelled</th>
+              <th scope="col" class="numeric">Nominal value of each share</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ordinary</td>
+              <td class="numeric">5</td>
+              <td class="numeric">1</td>
+            </tr>
+            <tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group">
+          <a href="share-class-details" class="link">Cancel more shares</a>
+        </div>
+        <div class="form-group">
+        <a class="button" href="" role="button">Confirm</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  {% endblock %}
