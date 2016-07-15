@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Updating your share capital (SH19)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Redemption of Ordinary shares</h1>
+        <p class="lede"></p>
+
+        <h2 class="heading-large">New share details</h2>
+          <div class="form-group">
+            <label class="form-label" for="full-name-f1">How many Ordinary shares will be issued?
+            </label>
+            <input class="form-control" id="full-name-f1" type="text">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="">What will the nominal value of each Ordinary share be?</label>
+            <input class="form-control" id="full-name-f2" type="text">
+          </div>
+
+        <a class="button" href="table-page" role="button">continue</a>
+
+
+   </div>
+  </div>
+
+</main>
+
+{% endblock %}
