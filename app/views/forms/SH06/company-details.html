@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Notice of cancellation of shares (SH06)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Tell us which company you want to file for</h1>
+      <form class="form" method="POST" action="auth-code" name="company">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="ni-number">
+            What is the company number?
+            <!--<span class="form-hint">This is the 8 digit number at the bottom of your incorporation certificate.</span>-->
+          </label>
+          <input class="form-control" id="company-number" name="company-number" type="number" value="">
+        </div>
+
+        <div class="form-group">
+          <details><summary><span class="summary">How do I know what the company number is?</span></summary>
+            <div class="panel panel-border-narrow">
+              <p>
+                If your company was registered in Scotland, for example, your company number may start with SC.
+              </p>
+              <p>
+                You can <a href="http://beta.companieshouse.gov.uk">search for your company on the public register</a> to find your company number.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+          <a class="button" href="auth-code" role="button">Continue</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

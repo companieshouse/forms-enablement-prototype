@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Notice of cancellation of shares (SH06)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Review your application</h1>
+        <p class="lede">Please confirm that the information you've provided us for Templeton Metal Works Ltd is correct</p>
+
+
+        <div class="form-group">
+          <h2 class="heading-large">Shares cancelled</h2>
+          <p>Date of cancellation: <span class="heading-small">31 January 2016</span></p>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Class of shares</th>
+                <th scope="col">Shares cancelled</th>
+                <th scope="col">Nominal value per share</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ordinary</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Preferred</td>
+                <td>100</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Ordinary C</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+
+
+        <div class="form-group">
+          <h2 class="heading-large">Updated share capital</h2>
+          <h3 class="heading-medium">Ordinary</h3>
+          <p>Share has full rights including voting, dividends and distributions.</p>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Currency</th>
+                <th scope="col" class="numeric">Total number of shares</th>
+                <th scope="col" class="numeric">Aggregate nominal value</th>
+                <th scope="col" class="numeric">Total amount unpaid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pound sterling</td>
+                <td class="numeric">5</td>
+                <td class="numeric">£5</td>
+                <td class="numeric">0</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>USD</td>
+                <td class="numeric">11</td>
+                <td class="numeric">$11</td>
+                <td class="numeric">0</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>Euro</td>
+                <td class="numeric">89</td>
+                <td class="numeric">€89</td>
+                <td class="numeric">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="form-group">
+          <form class="">
+            <fieldset>
+
+              <legend class="visuallyhidden"></legend>
+
+              <label class="block-label" for="I-understand">
+                <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
+                I confirm that the information above is correct and this is the latest statement of capital
+              </label>
+            </fieldset>
+          </form>
+      </div>
+        <a class="button" href="complete" role="button">Submit share capital</a>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

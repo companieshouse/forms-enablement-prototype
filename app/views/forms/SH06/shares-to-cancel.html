@@ -22,11 +22,9 @@ Blank page
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">Update your share capital</h1>
+      <h1 class="heading-xlarge">About the shares you are cancelling</h1>
 
-      <p class="lede">Tell us about the issued share capital. It should reflect the company's share capital immediately following the cancellation.</p>
-
-      <h3 class="heading-medium">What is the class of share?</h3>
+      <h3 class="heading-medium">Class of shares</h3>
         <form class="form" method="POST" action="" name="">
           <div class="form-group">
             <fieldset>
@@ -47,6 +45,10 @@ Blank page
                 <input id="radio-4" type="radio" name="radio-group" value="">
                 Ordinary C
               </label>
+              <label class="block-label" for="radio-5">
+                <input id="radio-5" type="radio" name="radio-group" value="">
+                Preferred
+              </label>
               <label class="block-label" for="radio-6" data-target="other-name">
                 <input id="radio-6" type="radio" name="radio-group" value="">
                 Other
@@ -60,31 +62,19 @@ Blank page
           </div>
         </form>
 
-      <h1 class="heading-medium">What are the rights attached to these shares?</h1>
-      <form class="form" method="POST" action="" name="">
         <div class="form-group">
-          <fieldset>
-
-            <label class="block-label" for="rights-1">
-              <input id="rights-1" type="radio" name="radio-group" value="">
-              Share has full rights including voting, dividend and distributions
-            </label>
-            <label class="block-label" for="rights-2" data-target="other-rights">
-              <input id="rights-2" type="radio" name="radio-group" value="">
-              I want to define my own rights
-            </label>
-          </fieldset>
-
-          <div class="panel panel-border-narrow js-hidden" id="other-rights">
-            <label class="form-label" for="other-rights-1"></label>
-            <textarea class="" id="other-rights-1" rows="10" type="text"></textarea>
-          </div>
+          <label class="form-label-bold" for="current-name">Number of shares cancelled</label>
+          <input class="form-control" id="current-name" type="text">
         </div>
-      </form>
 
+        <div class="form-group">
+          <label class="form-label-bold" for="new-name">Nominal value of each share
+          <span class="form-hint">This is the value per each share.</span></label>
+          <input class="form-control" id="new-name" type="text">
+        </div>
         <div class="form-group">
           <!--<input class="button" type="submit" value="Continue">-->
-          <a class="button" href="add-share-amount" role="button">Continue</a>
+          <a class="button" href="table-page" role="button">Confirm</a>
         </div>
 
 
