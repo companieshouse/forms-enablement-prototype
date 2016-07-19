@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Notice of name or other designation of class of shares (SH08)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Review your changes</h1>
+        <p class="lede">Please confirm that the information you've provided us for Templeton Metal Works Ltd is correct</p>
+
+
+        <h2 class="heading-large">Classes of shares</h2>
+        <div class="form-group">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Previous name</th>
+                <th scope="col">New name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ordinary A</td>
+                <td>Super Ordinary</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>Preferred</td>
+                <td>Super Ordinary</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>Deferred</td>
+                <td>Preferred</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="form-group">
+          <form class="">
+            <fieldset>
+
+              <legend class="visuallyhidden"></legend>
+
+              <label class="block-label" for="I-understand">
+                <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
+                I confirm that the information above is correct
+              </label>
+            </fieldset>
+          </form>
+      </div>
+        <a class="button" href="complete" role="button">Submit changes</a>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
