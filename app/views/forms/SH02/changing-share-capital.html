@@ -20,7 +20,7 @@ Blank page
         <form class="form" method="POST" action="" name="">
           <div class="form-group">
             <fieldset>
-
+              <legend class="visually-hidden">What class of share are you making changes to?</legend>
               <label class="block-label" for="radio-1">
                 <input id="radio-1" type="radio" name="radio-group" value="">
                 Ordinary
@@ -46,46 +46,38 @@ Blank page
                 Other
               </label>
             </fieldset>
-
             <div class="panel panel-border-narrow js-hidden" id="other-name">
               <label class="form-label" for="other-rights-1"></label>
               <input class="form-control" id="share-class-name" type="text">
             </div>
           </div>
-        </form>
 
-      <h1 class="heading-medium">What changes are you making to the chosen class of shares?</h1>
-        <form class="form" method="POST" action="" name="">
+          <h3 class="heading-medium">What changes are you making to the chosen class of shares?</h3>
           <div class="form-group">
             <fieldset>
-
-              <label class="block-label" for="consilidation">
-                <input id="consilidation" type="radio" name="radio-group" value="">
+              <legend class="visually-hidden">What changes are you making to the chosen class of shares?</legend>
+              <label class="block-label" for="consolidation">
+                <input id="consolidation" type="radio" name="changesGroup" value="consolidation">
                 Consolidation
               </label>
               <label class="block-label" for="sub-division">
-                <input id="sub-division" type="radio" name="radio-group" value="">
+                <input id="sub-division" type="radio" name="changesGroup" value="sub-division">
                 Sub-division
               </label>
               <label class="block-label" for="redemption">
-                <input id="redemption" type="radio" name="radio-group" value="">
+                <input id="redemption" type="radio" name="changesGroup" value="redemption">
                 Redemption
               </label>
               <label class="block-label" for="re-conversion">
-                <input id="re-conversion" type="radio" name="radio-group" value="">
+                <input id="re-conversion" type="radio" name="changesGroup" value="re-conversion">
                 Re-conversion
               </label>
             </fieldset>
-
+          </div>
+          <div class="form-group">
+            <input class="button" type="submit" value="Continue">
           </div>
         </form>
-
-        <div class="form-group">
-          <!--<input class="button" type="submit" value="Continue">-->
-          <a class="button" href="changing-share-capital" role="button">Continue</a>
-        </div>
-
-
     </div>
   </div>
 </main>

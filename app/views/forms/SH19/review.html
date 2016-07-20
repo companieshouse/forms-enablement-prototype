@@ -20,22 +20,21 @@ Blank page
     </ol>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
       <h1 class="heading-xlarge">Review your share capital</h1>
-        <p class="lede">Please confirm that the information you've provided us for Templeton Metal Works Ltd share capital is correct</p>
+        <p class="lede text">Please confirm that the information you've provided us for Templeton Metal Works Ltd share capital is correct</p>
 
 
         <h2 class="heading-large">Ordinary</h2>
         <p>Share has full rights including voting, dividends and distributions.</p>
         <div class="form-group">
-          <table>
+          <table class="check-your-answers">
             <thead>
               <tr>
                 <th scope="col">Currency</th>
                 <th scope="col" class="numeric">Total number of shares</th>
                 <th scope="col" class="numeric">Aggregate nominal value</th>
                 <th scope="col" class="numeric">Total amount unpaid</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -44,6 +43,7 @@ Blank page
                 <td class="numeric">5</td>
                 <td class="numeric">£5</td>
                 <td class="numeric">0</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">ordinary shares of pound sterling</span></a></td>
               </tr>
             </tbody>
             <tbody>
@@ -52,6 +52,7 @@ Blank page
                 <td class="numeric">11</td>
                 <td class="numeric">$11</td>
                 <td class="numeric">0</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">ordinary shares of US dollars</span></a></td>
               </tr>
             </tbody>
             <tbody>
@@ -60,6 +61,7 @@ Blank page
                 <td class="numeric">89</td>
                 <td class="numeric">€89</td>
                 <td class="numeric">0</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">ordinary shares of Euros</span></a></td>
               </tr>
             </tbody>
           </table>
@@ -67,25 +69,29 @@ Blank page
 
         <div class="form-group">
           <h2 class="heading-large">Supporting documents</h2>
-          <table>
+          <table class="check-your-answers">
             <thead>
               <tr>
                 <th scope="col">Document</th>
                 <th scope="col">File name</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Solvency statement</td>
                 <td>direc_document.pdf (205 KB)</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">solvency statement upload</span></a></td>
               </tr>
               <tr>
                 <td>Special resolution authorising the capital reduction</td>
                 <td>01_doc.pdf</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">special resolution upload</span></a></td>
               </tr>
               <tr>
                 <td>Director's statement</td>
                 <td>reg_office_doc.pdf (325 KB)</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">Directors statement uplaod</span></a></td>
               </tr>
             </tbody>
           </table>
@@ -98,7 +104,7 @@ Blank page
 
               <legend class="visuallyhidden"></legend>
 
-              <label class="block-label" for="I-understand">
+              <label class="block-label text" for="I-understand">
                 <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
                 I confirm that the information above is correct and this is the latest statement of capital
               </label>
@@ -108,8 +114,6 @@ Blank page
         <a class="button" href="payment" role="button">Submit share capital</a>
 
 
-    </div>
-  </div>
 </main>
 
 {% endblock %}

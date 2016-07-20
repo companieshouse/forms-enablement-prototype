@@ -20,28 +20,28 @@ Blank page
     </ol>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
       <h1 class="heading-xlarge">Review your application</h1>
-        <p class="lede">Please confirm that the information you've provided us for Templeton Metal Works Ltd is correct</p>
+        <p class="lede text">Please confirm that the information you've provided us for Templeton Metal Works Ltd is correct</p>
 
 
         <div class="form-group">
           <h2 class="heading-large">Shares cancelled</h2>
           <p>Date of cancellation: <span class="heading-small">31 January 2016</span></p>
-          <table>
+          <table class="check-your-answers">
             <thead>
               <tr>
                 <th scope="col">Class of shares</th>
-                <th scope="col">Shares cancelled</th>
-                <th scope="col">Nominal value per share</th>
+                <th scope="col" class="numeric">Shares cancelled</th>
+                <th scope="col" class="numeric">Nominal value per share</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Ordinary</td>
-                <td>5</td>
-                <td>1</td>
+                <td class="numeric">5</td>
+                <td class="numeric">1</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">ordinary shares being cancelled</span></a></td>
               </tr>
             </tbody>
           </table>
@@ -54,13 +54,14 @@ Blank page
           <h2 class="heading-large">Updated share capital</h2>
           <h3 class="heading-medium">Ordinary</h3>
           <p>Share has full rights including voting, dividends and distributions.</p>
-          <table>
+          <table class="check-your-answers">
             <thead>
               <tr>
                 <th scope="col">Currency</th>
                 <th scope="col" class="numeric">Total number of shares</th>
                 <th scope="col" class="numeric">Aggregate nominal value</th>
                 <th scope="col" class="numeric">Total amount unpaid</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -69,22 +70,7 @@ Blank page
                 <td class="numeric">5</td>
                 <td class="numeric">£5</td>
                 <td class="numeric">0</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>USD</td>
-                <td class="numeric">11</td>
-                <td class="numeric">$11</td>
-                <td class="numeric">0</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>Euro</td>
-                <td class="numeric">89</td>
-                <td class="numeric">€89</td>
-                <td class="numeric">0</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">ordinary shares in pound sterling</span></a></td>
               </tr>
             </tbody>
           </table>
@@ -96,7 +82,7 @@ Blank page
 
               <legend class="visuallyhidden"></legend>
 
-              <label class="block-label" for="I-understand">
+              <label class="block-label text" for="I-understand">
                 <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
                 I confirm that the information above is correct and this is the latest statement of capital
               </label>
@@ -105,9 +91,6 @@ Blank page
       </div>
         <a class="button" href="complete" role="button">Submit share capital</a>
 
-
-    </div>
-  </div>
 </main>
 
 {% endblock %}

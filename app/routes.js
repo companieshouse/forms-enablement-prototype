@@ -14,4 +14,7 @@ require('./routes/DS01/sole-director.js')(router);
 // DS01 - Multiple Director
 require('./routes/DS01/multiple-director.js')(router);
 
+// SH02 - Core
+require('./routes/SH02/SH02.js')(router);
+
 module.exports = router;
