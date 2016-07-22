@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+      <h1 class="heading-xlarge">Review your changes</h1>
+
+
+      <h2 class="heading-large">Consilidation</h2>
+      <div class="form-group">
+        <table class="check-your-answers">
+          <thead>
+            <tr>
+              <th scope="col">Class of shares</th>
+              <th scope="col" class="numeric">Previous number of shares</th>
+              <th scope="col" class="numeric">Previous nominal value</th>
+              <th scope="col" class="numeric">New number of shares</th>
+              <th scope="col" class="numeric">New nominal value</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pound sterling</td>
+              <td class="numeric">5</td>
+              <td class="numeric">£5</td>
+              <td class="numeric">3</td>
+              <td class="numeric">£7</td>
+              <td class="change-answer"><a href=" ">Change<span class="visually-hidden">new name of Ordinary</span></a></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          <a href="changing-share-capital" class="link">Change more shares</a>
+        <p>
+
+          <fieldset class="form-group">
+            <h2 class="heading-large">Date of assignment</h2>
+            <legend class="visuallyhidden">Date of assignment</legend>
+            <div class="form-date">
+
+              <p class="form-hint">For example, 31 1 2016</p>
+
+              <div class="form-group form-group-day">
+                <label for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+
+              <div class="form-group form-group-month">
+                <label for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+
+              <div class="form-group form-group-year">
+                <label for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+              </div>
+
+            </div>
+          </fieldset>
+
+        <p>
+          <a class="button" href="review" role="button">continue</a>
+        </p>
+
+  </main>
+
+  {% endblock %}

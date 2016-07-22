@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+      <h1 class="heading-xlarge">Review your changes</h1>
+        <p class="lede text">Please confirm that the information you've provided us for Templeton Metal Works Ltd share capital is correct</p>
+
+
+        <h2 class="heading-large">Consilidation</h2>
+        <p>Date of resolution: <span class="heading-small">31 January 2016</span></p>
+        <div class="form-group">
+          <table class="check-your-answers">
+            <thead>
+              <tr>
+                <th scope="col">Class of shares</th>
+                <th scope="col" class="numeric">Previous number of shares</th>
+                <th scope="col" class="numeric">Previous nominal value</th>
+                <th scope="col" class="numeric">New number of shares</th>
+                <th scope="col" class="numeric">New nominal value</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pound sterling</td>
+                <td class="numeric">5</td>
+                <td class="numeric">£5</td>
+                <td class="numeric">3</td>
+                <td class="numeric">£7</td>
+                <td class="change-answer"><a href=" ">Change<span class="visually-hidden">new name of Ordinary</span></a></td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <div class="form-group">
+          <form class="">
+            <fieldset>
+
+              <legend class="visuallyhidden"></legend>
+
+              <label class="block-label text" for="I-understand">
+                <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
+                I confirm that the information above is correct and this is the latest statement of capital
+              </label>
+            </fieldset>
+          </form>
+      </div>
+        <a class="button" href="payment" role="button">Submit share capital</a>
+
+
+</main>
+
+{% endblock %}
