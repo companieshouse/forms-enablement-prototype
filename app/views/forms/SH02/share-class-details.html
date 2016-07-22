@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Statement of capital</h1>
+      <p class="lede">Tell us what the share capital will be following the reduction.</p>
+
+      <h3 class="heading-medium">What is the class of share?</h3>
+        <form class="form" method="POST" action="" name="">
+          <div class="form-group">
+            <fieldset>
+
+              <label class="block-label" for="radio-1">
+                <input id="radio-1" type="radio" name="radio-group" value="">
+                Ordinary
+              </label>
+              <label class="block-label" for="radio-2">
+                <input id="radio-2" type="radio" name="radio-group" value="">
+                Ordinary A
+              </label>
+              <label class="block-label" for="radio-3">
+                <input id="radio-3" type="radio" name="radio-group" value="">
+                Ordinary B
+              </label>
+              <label class="block-label" for="radio-4">
+                <input id="radio-4" type="radio" name="radio-group" value="">
+                Ordinary C
+              </label>
+              <label class="block-label" for="radio-6" data-target="other-name">
+                <input id="radio-6" type="radio" name="radio-group" value="">
+                Other
+              </label>
+            </fieldset>
+
+            <div class="panel panel-border-narrow js-hidden" id="other-name">
+              <label class="form-label" for="other-rights-1"></label>
+              <input class="form-control" id="share-class-name" type="text">
+            </div>
+          </div>
+        </form>
+
+      <h1 class="heading-medium">What are the rights attached to these shares?</h1>
+      <form class="form" method="POST" action="" name="">
+        <div class="form-group">
+          <fieldset>
+
+            <label class="block-label" for="rights-1">
+              <input id="rights-1" type="radio" name="radio-group" value="">
+              Share has full rights including voting, dividend and distributions
+            </label>
+            <label class="block-label" for="rights-2" data-target="other-rights">
+              <input id="rights-2" type="radio" name="radio-group" value="">
+              I want to define my own rights
+            </label>
+          </fieldset>
+
+          <div class="panel panel-border-narrow js-hidden" id="other-rights">
+            <label class="form-label" for="other-rights-1"></label>
+            <textarea class="" id="other-rights-1" rows="10" type="text"></textarea>
+          </div>
+        </div>
+      </form>
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+          <a class="button" href="add-share-amount" role="button">Continue</a>
+        </div>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
