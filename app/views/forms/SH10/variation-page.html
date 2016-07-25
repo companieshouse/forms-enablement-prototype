@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Details of variation of rights</h1>
+
+          <fieldset class="form-group">
+            <h2 class="heading-large">Date of rights</h2>
+            <legend class="visuallyhidden">Date of variation of rights</legend>
+            <div class="form-date">
+              <p class="form-hint">For example, 31 1 2016</p>
+              <div class="form-group form-group-day">
+                <label for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+              <div class="form-group form-group-month">
+                <label for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+              <div class="form-group form-group-year">
+                <label for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <h2 class="heading-large">Details of variation of rights attached to shares</h2>
+            <label class="visually-hidden" for="">Details of variation of rights attached to shares</label>
+          <textarea class="" id="other-rights-1" rows="9" type="text"></textarea>
+        </div>
+
+        <p>
+          <a class="button" href="review" role="button">Confirm rights</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  {% endblock %}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Review your variation of rights</h1>
+        <p class="lede text">Please confirm that the information you've provided us for Templeton Metal Works Ltd share capital is correct</p>
+
+
+        <h2 class="heading-large">Variation of rights</h2>
+        <p>Date of rights: <span class="heading-small">31 January 2016</span></p>
+        <div class="form-group">
+          <label class="visually-hidden" for="">Details of variation of rights attached to shares</label>
+        <textarea class="" id="other-rights-1" rows="9" type="text"></textarea>
+      </div>
+
+
+        <div class="form-group">
+          <form class="">
+            <fieldset>
+
+              <legend class="visuallyhidden"></legend>
+
+              <label class="block-label text" for="I-understand">
+                <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
+                I confirm that the information above is correct
+              </label>
+            </fieldset>
+          </form>
+      </div>
+        <a class="button" href="complete" role="button">Submit variation of rights</a>
+
+      </div>
+    </div>
+</main>
+
+{% endblock %}
