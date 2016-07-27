@@ -26,14 +26,43 @@ Blank page
         <p class="lede"></p>
 
         <div class="form-group">
-          <label class="form-label-bold" for="current-name">Existing name of the class of shares</label>
+          <label class="form-label" for="current-name">Existing name of the class of shares</label>
           <input class="form-control" id="current-name" type="text">
         </div>
 
         <div class="form-group">
-          <label class="form-label-bold" for="new-name">New name of class of shares or other designation</label>
+          <label class="form-label" for="new-name">New name of class of shares or other designation</label>
           <input class="form-control" id="new-name" type="text">
         </div>
+
+        <div class="form-group">
+        <h1 class="heading-medium">
+          Are you re-designating all the shares in the class?
+          </h1>
+          <form>
+          <fieldset class="inline">
+
+            <legend class="visuallyhidden">Do you already have a personal user account?</legend>
+
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+              Yes
+            </label>
+            <label class="block-label" for="change-shares-amount" data-target="change-shares">
+              <input id="change-shares-amount" type="radio" name="radio-inline-group" value="No">
+              No
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="change-shares">
+              <div class="form-group">
+                <label class="form-label" for="how-many-shares">How many of the shares do you want to change to the new class name?</label>
+                <input class="form-control" id="how-many-shares" type="text">
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+
 
         <a class="button" href="table-page" role="button">Confirm</a>
 
