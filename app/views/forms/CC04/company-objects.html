@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Statement of company's objects (CC04)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Company's objects</h1>
+
+      <div class="form-group">
+        <form class="form" method="POST" action="" name="">
+            <fieldset>
+              <h2 class="heading-medium">What changes are you making to the company objects?</h2>
+
+              <label class="block-label" for="i-am-director">
+                <input id="i-am-director" name="situations" type="radio" value="i-am-director">
+                I'm adding to the objects
+              </label>
+              <label class="block-label" for="deceased-director" data-target="deceased-director-name">
+                <input id="deceased-director" name="situations" type="radio" value="deceased-director">
+                I'm removing some of the objects
+              </label>
+              <label class="block-label" for="power-of-attorney" data-target="power-of-attorney-details">
+                <input id="power-of-attorney" name="situations" type="radio" value="power-of-attorney">
+                I'm altering some of the objects
+              </label>
+
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="form-group">
+            <form class="">
+              <h2 class="heading-medium">Confirmation</h2>
+              <p>You must agree to this statement to proceed.</p>
+              <fieldset>
+
+                <legend class="visuallyhidden"></legend>
+
+                <label class="block-label text" for="I-understand">
+                  <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
+                  I confirm that the information above is correct
+                </label>
+              </fieldset>
+            </form>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Submit">
+        </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
