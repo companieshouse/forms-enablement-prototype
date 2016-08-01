@@ -8,68 +8,59 @@ Blank page
 
 <main id="content" role="main">
 
-  {% block phase_banner %}
-  {% include "includes/phase_banner_alpha.html" %}
-  {% endblock %}
+{% block phase_banner %}
+{% include "includes/phase_banner_alpha.html" %}
+{% endblock %}
 
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="http://www.gov.uk">Home</a></li>
-      <li><a href="">Companies House Forms</a></li>
-      <li>Notice of name or other designation of class of shares (SH08)</li>
-    </ol>
-  </div>
+<div class="breadcrumbs">
+  <ol>
+    <li><a href="http://www.gov.uk">Home</a></li>
+    <li><a href="">Companies House Forms</a></li>
+    <li>Notice of name or other designation of class of shares (SH08)</li>
+  </ol>
+</div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h1 class="heading-xlarge">Changing the name of a class of shares</h1>
-        <p class="lede"></p>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-xlarge">Changing the name of a class of shares</h1>
+    <p class="lede"></p>
 
-        <div class="form-group">
-          <label class="form-label" for="current-name">Existing name of the class of shares</label>
-          <input class="form-control" id="current-name" type="text">
-        </div>
+    <div class="form-group">
+      <label class="form-label" for="current-name">Existing name of the class of shares</label>
+      <input class="form-control" id="current-name" type="text">
+    </div>
 
-        <div class="form-group">
-          <label class="form-label" for="new-name">New name of class of shares or other designation</label>
-          <input class="form-control" id="new-name" type="text">
-        </div>
+    <div class="form-group">
+      <label class="form-label" for="new-name">New name of class of shares or other designation</label>
+      <input class="form-control" id="new-name" type="text">
+    </div>
 
-        <div class="form-group">
-        <h1 class="heading-medium">
-          Are you re-designating all the shares in the class?
-          </h1>
-          <form>
+    <!--<div class="form-group">
+      <h1 class="heading-medium">Are you re-designating all the shares in the class?</h1>
+        <form>
           <fieldset class="inline">
 
             <legend class="visuallyhidden">Do you already have a personal user account?</legend>
 
             <label class="block-label" for="radio-inline-1">
-              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-              Yes
+              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
             </label>
             <label class="block-label" for="change-shares-amount" data-target="change-shares">
-              <input id="change-shares-amount" type="radio" name="radio-inline-group" value="No">
-              No
+              <input id="change-shares-amount" type="radio" name="radio-inline-group" value="No">No
             </label>
 
             <div class="panel panel-border-narrow js-hidden" id="change-shares">
               <div class="form-group">
                 <label class="form-label" for="how-many-shares">How many of the shares do you want to change to the new class name?</label>
-                <input class="form-control" id="how-many-shares" type="text">
+                  <input class="form-control" id="how-many-shares" type="text">
               </div>
             </div>
           </fieldset>
-          </form>
-        </div>
-
+        </form>-->
 
         <a class="button" href="table-page" role="button">Confirm</a>
-
-
-   </div>
-  </div>
-
-</main>
+      </div>
+    </div>
+  </main>
 
 {% endblock %}
