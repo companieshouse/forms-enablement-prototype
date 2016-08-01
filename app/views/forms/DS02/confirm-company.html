@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House Forms</a></li>
+      <li>Withdrawal of closing company application (DS02)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Confirm your company details</h1>
+      <p class="lede">
+        Review the information below and confirm that the information is correct.
+      </p>
+      <h2 class="heading-large">Templeton Metal Work Limited</h2>
+      <form class="form" method="POST" action="sole-director/directors" name="company">
+        <div class="form-group">
+          <table>
+            <tbody>
+              <tr>
+                <th scope="row">Company number</th>
+                <td>05647510</td>
+              </tr>
+              <tr>
+                <th scope="row">Status</th>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <th scope="row">Incorporation date</th>
+                <td>27th January 2005</td>
+              </tr>
+              <tr>
+                <th scope="row">Company type</th>
+                <td>Private Limited Company</td>
+              </tr>
+              <tr>
+                <th scope="row" style="vertical-align:top;">Registered office address</th>
+                <td>
+                  22 Everdene Lane<br />
+                  West Morton<br />
+                  Northamptonshire<br />
+                  NT54 3ET
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" style="vertical-align:top;">Directors</th>
+                <td>
+                  David Arthur Templeton<br />
+                  Cathy Nicholas<br />
+                  Steve Jones<br />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          <a class="button" href="are-you-a-direc" role="button">Continue</a>
+        </p>
+        <p><a href="company-details">Not the right company?</a></p>
+      </form>
+    </div>
+
+    <div class="column-third">
+      <!--<aside class="govuk-related-items" role="complementary">
+      <h2 class="heading-medium" id="subsection-title">Not your company?</h2>
+      <p>
+      If the company information shown on screen isn't what you were expecting you should first ensure you entered the correct company number and auth code for the company you wish to strike off.
+    </p>
+    <nav role="navigation" aria-labelledby="subsection-title">
+    <ul class="font-xsmall">
+    <li><a href="#">Search for your company information on the </a></li>
+    <li><a href="#">Related link</a></li>
+    <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+  </ul>
+</nav>
+</aside>-->
+</div>
+</div>
+
+</main>
+
+{% endblock %}

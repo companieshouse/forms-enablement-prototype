@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Start page example
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a></li>
+      <li><a href="">Companies House</a></li>
+      <li>Withdrawal of closing company application (DS02)</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Withdrawing your application
+      </h1>
+
+    <h3 class="heading-medium">Confirm you understand</h3>
+      <p>The directors hereby withdraw the application in which it was requested that this company be struck off the Register. I am confirming this on behalf of the company.</p>
+        <div class="form-group">
+          <form class="">
+            <fieldset>
+
+              <legend class="visuallyhidden"></legend>
+
+              <label class="block-label text" for="I-understand">
+                <input id="I-understand" name="approve-application" type="checkbox" value="I-understand">
+                I understand
+              </label>
+            </fieldset>
+          </form>
+        </div>
+
+
+      <p>
+        <a class="button" href="complete" role="button">Continue</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
