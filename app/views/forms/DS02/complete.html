@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Submission complete</h1>
+        <p>
+          Your reference number is <br>
+          <strong class="heading-medium">DS01-05647510-AA57D</strong>
+        </p>
+      </div>
+
+      <h2 class="heading-medium">What happens now?</h2>
+      <p>We'll send you an email confirming your request to withdraw the application to close Temlpleton Metal Work Limited.</p>
+      <div class="panel panel-border-wide">
+        <p><a href="" target="_blank">Download a copy of your submitted request (PDF, 205Kb)</a></p>
+      </div>
+
+    </div>
+</div>
+
+</main>
+
+{% endblock %}
