@@ -66,34 +66,37 @@ Blank page
           <input class="form-control" id="full-name-f2" type="text">
         </div>
 
+         <form class="form" method="POST" action="are-you-a-direc" name="are-you-a-direc">
 
-        <div class="form-group">
-           <h3 class="heading-medium">Have the shares been paid for in full?</h3>
-           <fieldset class="inline">
-           <legend class="visuallyhidden">Have the shares been paid for?</legend>
-           <label class="block-label" for="share-class-currency-pound" data-target="shares-paid-yes">
-             <input id="share-class-currency-pound" type="radio" name="radio-inline-group" value="British Pound">
-             Yes
-           </label>
-           <label class="block-label" for="share-some-paid" data-target="shares-paid-some">
-             <input id="share-some-paid" type="radio" name="radio-inline-group" value="British Pound">
-             No
-           </label>
-           <div class="panel panel-border-narrow js-hidden" id="shares-paid-some">
-             <div class="form-group">
-               <label class="form-label" for="share-class-p">What is the total amount unpaid?</label>
-               <input class="form-control" id="share-class-p" type="text">
+           <div class="form-group">
+             <h3 class="heading-medium">Have the shares been paid for in full?</h3>
+             <fieldset class="inline">
+               <legend class="visuallyhidden">Have the shares been paid for?</legend>
+               <label class="block-label" data-target="example-ni-yes" for="radio-inline-1">
+                 <input id="radio-inline-1" type="radio" name="presenter" value="Yes">
+                 Yes
+               </label>
+               <label class="block-label" data-target="example-ni-no" for="radio-inline-2">
+                 <input id="radio-inline-2" type="radio" name="presenter" value="No">
+                 No
+               </label>
+             </fieldset>
+
+
+             <div class="panel panel-border-narrow js-hidden" id="example-ni-no">
+               <div class="form-group">
+                 <label class="form-label" for="presenters-email">What is the total amount unpaid?</label>
+                 <input class="form-control" name="presenters-email" type="text" id="presenters-email">
+               </div>
              </div>
            </div>
 
-         </fieldset>
-      </div>
 
-        <a class="button" href="table-page" role="button">Continue</a>
+           <a class="button" href="table-page" role="button">Continue</a>
+      </div>
 
 
    </div>
-  </div>
 
 </main>
 
