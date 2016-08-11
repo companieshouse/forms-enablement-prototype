@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Which file do you want to submit?</h1>
+
+        <form class="form" method="POST" action="" name="">
+          <div class="form-group">
+            <fieldset>
+
+              <label class="block-label" for="radio-1">
+                <input id="radio-1" type="radio" name="radio-group" value="">
+                PTF
+              </label>
+              <label class="block-label" for="radio-2">
+                <input id="radio-2" type="radio" name="radio-group" value="">
+                Auditor's letter of resignation
+              </label>
+              <label class="block-label" for="radio-3">
+                <input id="radio-3" type="radio" name="radio-group" value="">
+                Memorandum and Articles of Association
+              </label>
+              <label class="block-label" for="radio-4">
+                <input id="radio-4" type="radio" name="radio-group" value="">
+                Specify the nature of a change in the limited partnership
+              </label>
+              <label class="block-label" for="radio-6" data-target="">
+                <input id="radio-6" type="radio" name="radio-group" value="">
+                Capital SS
+              </label>
+              <label class="block-label" for="radio-7" data-target="">
+                <input id="radio-7" type="radio" name="radio-group" value="">
+                Statement of  Directors
+              </label>
+            </fieldset>
+          </div>
+        </form>
+
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+          <a class="button" href="attach-or-text" role="button">Continue</a>
+        </div>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

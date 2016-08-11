@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Blank page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Submitting a director's statement</h1>
+
+      <h3 class="heading-medium">How do you want to submit it?</h3>
+
+      <form class="form" method="POST" action="" name="">
+        <div class="form-group">
+          <fieldset>
+
+            <label class="block-label" for="attach-file" data-target="upload-file">
+              <input id="attach-file" type="radio" name="radio-group" value="">
+              I want to attach a file
+            </label>
+            <label class="block-label" for="enter-info" data-target="enter-file">
+              <input id="enter-info" type="radio" name="radio-group" value="">
+              I want to enter the information here
+            </label>
+          </fieldset>
+
+          <div class="panel panel-border-narrow js-hidden" id="enter-file">
+            <label class="form-label" for="enter-file-now"></label>
+            <textarea class="" id="enter-file-now" rows="10" type="text"></textarea>
+          </div>
+
+          <div class="panel panel-border js-hidden" id="upload-file">
+            <div class="form-group">
+
+              <table>
+                <caption class="visually-hidden">Director's statement</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="doc-name">Document name</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Director's statement</td>
+                    <td>Not yet uploaded</td>
+                    <td><a href="" class="link">Add document</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </form>
+
+
+        <div class="form-group">
+          <!--<input class="button" type="submit" value="Continue">-->
+          <a class="button" href="attach-or-text" role="button">Continue</a>
+        </div>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
